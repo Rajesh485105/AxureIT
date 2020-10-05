@@ -1,246 +1,782 @@
-/*fornt inport*/
-	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;*/
 
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: 0;
 }
-body,h1,h2,h3,h4,h5,h6,p,span,input,button{
-font-family: 'Playfair Display', serif;
-}
+/*font awesoem font download here*/
 
-/*header section sellection css  start*/
-.header{
-width: 100%;
-display: flow-root;
-}
-.cointainer{
-	width: 1140px;
-	margin: 0 auto;
-}
-.navibar{
+/*h1,h2,h3,h4,h5{
+	font-family: 'Open Sans', sans-serif;
+}*/
+/* heading nav var start herer*/
+/*===================================*/
+header{
 	width: 100%;
-	padding: 30px 0;
-	float: left;
+	background: black;
+	 }
+.nav-link{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: white !important;
+	transition: .6se;
+
+}
+.nav-link:hover{
+	transform: scale(1.05);
+	color: grey !important;
+	transition: .6se;
+
+}
+.nav-bar{
+	padding: 1rem 1rem !important;
+}
+.nav-item{
+	    padding-left: 20px;
 }
 
-.logo{
-	width: 20%;
-	float: left;
-}
-.manu-item{
-	width: 80%;
-	float: right;
-	text-align: right;
-	
-}
-.manu-item ul li{
-	list-style: none;
-	display: inline-block;
-}
-.manu-item ul li a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #7c8081;
-	margin-left: 55px;
-	transition: 1sc;
-}
-.manu-item ul li a:hover{
-	color: green;
-	font-family: bold;
-	transform: scale(1.1);
-	transition: 1s;
-}
-
-/*header section sellection css end*/
-/*Banner section css start*/
+/********************************
+banner css start here
+**********************************/
 .banner{
 	width: 100%;
-	display: flow-root;
+	height: 100vh;
+	border-image-repeat: none;
+	background-image: url(../image/banner.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-
-.post-contain{
-	 padding:50px;
+.banner-text{
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+    padding-left: 25px;
 }
-.photodairy{
+.banner-text h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: white;
 	text-transform: uppercase;
-	color: #b4ad9e;
+	font-size: 36px;
+    padding-right: 115px;
+    margin: 25px 0;
 }
-.title{
-padding: 25px 0;
-color: #626262;
-	
-}
-.paragraph{
-	color: #636162;
-}
-.comment{
-	margin-top: 20px;
-	color: #b4ad9e;
-}
-/*Banner section css end*/
+.line{
+	width: 70px;
+	height: 2px;
+	background: white;
+ 	margin: 25px 0;
+ }
 
-/*Post Gallary css Start*/
-.post-gallary{
+.banner-text p{
+	font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 16px;
+    margin-right: 135px;
+    margin-bottom: 40px;
+}
+.banner-btn{
+  	height: 35px;
+    width: 90px;
+    background: transparent;
+    color: #ffff;
+    border: none;
+    border: 1px solid #ffff;
+}
+.banner-btn:hover{
+	 border: 2px solid #ffff;
+	 transform: scale(1.05);
+}
+.banner-form{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+.banner-form .card{
+	    margin-left: 100px;
+}
+.banner-form .card .card-header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+
+.banner-form .card .card-header h1 span{
+	text-transform: uppercase;
+	color: #ff8b38 !important;
+}
+.banner-form .card .card-body .form-control{
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    border-radius: 0;
+}
+ .banner-form .card .card-body .form-control:focus{
+ 	box-shadow: none;
+}
+
+.banner-form .card .card-body .form-group{
+	    margin-bottom: 1.5rem;
+}
+
+.banner-form .card .card-body{    
+	    padding: 1.25rem 2rem;
+}
+
+.banner-form .card .card-body input::placeholder{
+	/* border-bottom: 1px solid #d6d6d6;*/
+}
+.banner-form .card .card-fotter input{
+    width: 100%;
+    height: 45px;
+    background: #ff9b51;   
+    border: none;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #ffff !important;
+}
+.banner-form .card .card-fotter input:hover{
+    background: #e9670b;
+    color: #d5cece !important;
+}
+/*****************************************
+ social media seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .social-media-seciton{
+ 	width: 100%;
+ 	
+ }
+.media-text {	
+ 	display: table-cell;
+    height: 20vh;
+    vertical-align: middle;
+}
+ 
+.social-media-seciton .media-text h1{
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 700;
+ 	font-size: 21px;
+ 	color: #333333 !important;
+ 	 line-height: 1.2;  
+ }
+ .social-media-seciton .media-text p{
+ 	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #86878b !important;
+     line-height: 1.2;  
+}
+.socialicon-media-area{
+    display: table-cell;
+    height: 20vh;
+    vertical-align: middle;
+  
+}
+.social-media-seciton .socialicon-media-area ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.social-media-seciton .socialicon-media-area ul li a{
+   	font-size: 55px;
+    color: #cccccc;
+    padding-right: 60px;
+}
+/*****************************************
+ feature-1 seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .feature-1{
+ 	width: 100%;
+ 	background: #f5f5f5;
+ }
+ .feature-1 .feature-tab{
+ 	padding-left: 50px;
+ }
+
+  .feature-1 .feature-tab ul li{
+    list-style: none;
+    background: #333333 !important;
+    border-bottom: 1px solid white;
+    height: 100px;
+    width: 100px;
+   	text-align: center;
+    line-height: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffff !important;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.feature-1 .feature-tab .active{
+	background: #ff8b38 !important;
+}
+
+.feature-1 .feature-tab .item-1{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.feature-1 .feature-tab .item-3{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.item h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.item p{
+	margin: 25px 0;
+	padding-right: 71px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.item .feature-btn{
+    width: 120px;
+    height: 40px;
+    background: #ff8b38;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.feature-1 .col-md-4{
+	    display: flex;
+    align-items: center;
+}
+/*****************************************
+ feature-2 seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .feature-2{
+ 	width: 100%; 	
+ }
+  .line{
+ 	width: 85px;
+    height: 5px;
+    background: #ff8b38;
+ }
+ .image-ft-3{
+ 	    text-align: center;
+ }
+
+.feature-2 h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+ .feature-2 p{        
+ 	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+   padding-right: 96px;
+}
+
+.bottom-padding{
 	width: 100%;
-	display: flow-root;
+	padding: 150px 0;
 }
-.gallary{
-	padding:50px;
-	display: flow-root;
-	
+.socialicon-media-area-1{
+  	display: table-cell;
+    height: 102px;
+    vertical-align: middle;
+  
 }
-.photo-gallary{
+.feature-2 .socialicon-media-area-1 ul li{
+	list-style: none;
+    align-items: center;
+}
+.feature-2 .socialicon-media-area-1 ul li a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 51px;
+    border: 3px solid;
+    line-height: 35px;
+    text-align: center;
+    color:#ff8b38;
+}
+
+.feature-2 h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700 !important;
+    font-size: 20px;
+}
+ .feature-2 .icon-p p{        
+ 	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+   
+}
+
+
+ /*****************************************
+ feature-3 seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .feature-3{
+ 	width: 100%;	
+ }
+ .feature-3 h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+ .feature-3 p{        
+ 	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 96px;
+}
+/*****************************************
+ advantage seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.advantage{
 	width: 100%
 }
-.gallary-left{
-	width: 48%;
-	float: left;
-	margin: 0 auto;
-}
-.photo-gallary .photodairy{
-	    margin-top: 22px;
-}
-.gallary-right{
-	width: 48%;
-	float: right;
-	margin: 0 auto;
-}
-.title-1{
-	
-	color: #626262;
-}
-/*Post Gallary css End*/
-/*subcription from css start*/
-.subcription{
-	width: 100%;
-	display: flow-root;
-	background: #f0f0f0;
+.advantage .advantage-text{
 	text-align: center;
-	padding: 60px 0;
+	
+
+}
+.advantage .advantage-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.advantage .advantage-text .line-1{
+ 	width: 85px;
+    height: 3px;
+    background: #ff8b38;
+   margin-left: 625px;
+ }
+.advantage .advantage-text p{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    padding-top:  30px;
+    padding-bottom: 50px;
+}
+.advantage .col-md-4{
+	text-align: center;
+}
+.socialicon-media-area-2 ul li{
+	list-style: none;
+}
+.socialicon-media-area-2 ul li a i{ 
+	width: 80px;
+    height: 80px;
+    border-radius: 51px;
+    border: 3px solid #ff8b38;
+    line-height: 80px;
+    font-size: 40px;
+    color: #ff8b38 !important;
+}
+.advantage .col-md-4 h2{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    padding: 40px 0;
+}
+.advantage .col-md-4 p{
+    padding: 0 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
 }
 
-.subcription  h1{
-	padding-bottom: 40px;
+/*****************************************
+ pricing seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .pricing{
+ 	width: 100%;
+ 	background: #f5f5f5;
+ }
+ 
+ .pricing .pricing-text{
+ 	text-align: center;
+ }
+ .pricing .pricing-text h1{
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 400;
+    font-size: 46px;
+   	text-transform: uppercase;
+	padding-bottom: 30px;
+ }
+ .pricing .pricing-text .line-1{
+ 	width: 85px;
+    height: 3px;
+    background: #ff8b38;
+    margin-left: 625px;
+ }
+ .pricing .pricing-text p{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    padding-top:  30px;
+    padding-bottom: 60px;
 }
 
-form input{
-	width: 380px;
-	height: 35px;
-    margin: 15px 0;
+.pricing .pricing-tab ul li{
+    list-style: none;
+  /*  width: 400px;*/
+   
+}
+.pricing .pricing-tab{
+	width: 400px;
+}
+.pricing .pricing-tab .active-1{ 
+    height: 100px;
+    line-height: 100px;
+    background: #333333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffff !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+
+}
+.pricing .pricing-tab .active-2{    
+    height: 300px;
+    background: #333333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 160px;
+}
+
+.pricing .pricing-tab .active-2 span{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.pricing .pricing-tab .active-2 h5{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+.pricing .pricing-tab .active-3{
+    height: 15px;
+    background: #ff8b38 !important;
+}
+.pricing .pricing-tab-1 ul li{
+    list-style: none;
+    width: 400px;}
+
+.pricing .pricing-tab-1 .active-1{ 
+    height: 100px;
+    line-height: 100px;
+   background: #333333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffff !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+.pricing .pricing-tab-1 .active-2{    
+    height: 300px;
+    background: #333333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 160px;
+}
+
+.pricing .pricing-tab-1 .active-2 span{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.pricing .pricing-tab-1 .active-2 h5{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+.pricing .pricing-tab-1 .active-3{
+	background: #ff8b38 !important;
+    height: 80px;
+}
+.pricing .pricing-tab-2 ul li{
+    list-style: none;
+    width: 400px;
+   
+}
+
+.pricing .pricing-tab-2 .active-1{
+	height: 100px;
+    line-height: 100px;
+    background: #333333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffff !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+.pricing .pricing-tab-2 .active-2{    
+    height: 300px;
+    background: #333333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 160px;
+}
+
+.pricing .pricing-tab-2 .active-2 h5{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+
+.pricing .pricing-tab-2 .active-3{
+	background: #ff8b38 !important;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+	color: #ffff !important;
+    height: 80px;
+    line-height: 80px;
+}
+
+.pricing .priceing-offer{
+	background: #ffff !important;
+	padding: 35px 0;
+	width: 400px;
+	text-align: center;
+	font-size: 22px;
+	color: #86878b !important;
+ }
+.pricing .pricing-tab-2 .price-3{
+	    font-size: 70px;
+}
+}
+.pricing .pricing-tab-2 .price-4{
+	    font-size: 70px;
+}
+
+.pricing .priceing-offer p{
+	    margin-bottom: 2rem;
+}
+/*****************************************
+ customer review seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.customer-revew{
+ 	width: 100%;
+ 	background: #f5f5f5;
+ }
+ 
+ .customer-revew .customer-revew-text{
+ 	text-align: center;
+ }
+ .customer-revew .customer-revew-text h1{
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 400;
+    font-size: 46px;
+   	text-transform: uppercase;
+	padding-bottom: 30px;
+ }
+ .customer-revew .customer-revew-text .line-1{
+ 	width: 85px;
+    height: 3px;
+    background: #ff8b38;
+    margin-left: 625px;
+ }
+ .customer-revew .customer-revew-text p{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    padding-top:  30px;
+    padding-bottom: 60px;
+}
+.customer-revew .customer-saying .customer-revew-saying{
+	       padding: 0px 75px;
+}
+
+.customer-revew .col-md-6{
+	padding-left:0  !important;
+}
+.customer-revew .customer-saying .designation{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+/*****************************************
+ fotter seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .fotter{
+	width: 100%;
+	height: 60vh;
+	border-image-repeat: none;
+	background-image: url(../image/fotter.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.fotter-content{
+	text-align: center;
+	
+}
+.fotter .fotter-content h1{
+	font-family: 'Raleway', sans-serif;
+ 	font-weight: 400;
+    font-size: 46px;
+    color: white;
+   	text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 6%;
+}
+.fotter .fotter-content .line-1{
+	width: 85px;
+    height: 2px;
+	background: #ffff;
+    margin-left: 625px;
+}
+.fotter .fotter-content p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 18px;
+	padding-top:  30px;
+	padding-bottom: 15px;
+}
+.fotter .fotter-content .fotter-btn{
+    width: 120px;
+    height: 40px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    color: white;
+    font-weight: 600;
+    border-radius: 1px;
+    border: 2px solid white;
+    transform: .5sc;
 }
-form input:focus{
-	outline: : none;
+.fotter .fotter-content .fotter-btn:hover{
+	transform: scale(1.05);
+	transform: .5sc;
 }
-form input::placeholder{
-	font-size: 14px
+/*****************************************
+ contact seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .contact{
+ 	width: 100%;
+ }
+ .contact-content{
+	text-align: center;
+	
 }
-form{
-	position: relative;
+.contact .contact-content h1{
+	font-family: 'Raleway', sans-serif;
+ 	font-weight: 400;
+    font-size: 46px;
+    /*color: grey;*/
+   	text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 6%;
 }
-form i{
-	position: absolute;
-    top: 27px;
-    right: 396px;
-}
-.gallary .button{
-	margin-top: 200px;
+.contact .contact-content .line-1{
+	width: 85px;
+    height: 3px;
+    background: #ff8b38;
+    margin-left: 625px;
 }
 
-.read-more{
-text-align: center;
-
-}
-.read-more button{
-	padding:20px 50px;
-	/*background: transparent;*/
+.contact .contact-content p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	color: grey;
 	font-size: 18px;
-	border-radius: 3px;
-	border: none;
-	border-bottom: 1px solid #bebcbd;
-	transform: .6s;
-}
-.read-more button:hover{
-	color: green;
-	background: #bebcbd;
-	border-radius: 5px;
-	border-bottom: 1px solid green;
-	transform: scale(1.03);
-	transform: .6s;
-
+	padding-top:  30px;
+	padding-bottom: 15px;
 }
 
-/*subcription from css end*/
-/*Social icon css start*/
-.cocialicon{
-	width: 100%;
-	display: flow-root;
-}
-.cocialbar{
-	width: 100%;
-	float: left;
-    padding: 30px 0;
-
-}
-.cocial-manu{
-	width: 40%;
-	float: left;
-	/*text-align: center;*/
-
-} 
-
-.cocial-manu ul{
-list-style: none;
-
-}
-.cocial-manu ul li{
-list-style: none;
-display: inline-block;
-margin: 0 45px;
-font-size: 18px;
-transform: .6s;
-}
-.cocial-manu ul li:hover{
-	color: green;
-	transform: scale(1.3);
-	transform: .6s;}
-}
-.cocial-icon{
-	width: 45%;
-	float: right;
+.contact  ul li input{
+    width: 600px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
 }
 
-/*Social Icon right start*/
-
-/*Social Icon right end*/
-.cocial-icon ul{
-list-style: none;
-}
-.cocial-icon ul li {
-	display:inline-block;
-	color: black;
-	padding-right: 20px;
-	transform: .6s;
-}
-.cocial-icon ul li:hover{
-	color: green;
-	transform: scale(1.25);
-	font-style: bold
-	transform: .6s;
-}
-.cocial-icon ul a i{
-	font-size: 18px;
-	color: #7c8081;
-	padding-right: 20px;
-	transform: .6s;
+.contact input{
+	    border: none;
+    border-bottom: 1px solid lightgrey;
+    height: 175px;
+    width: 600px;
 
 }
+.contact  ul li{
+	    padding-bottom: 35px;
+}
+.contact .message-button{
+	padding-left: 590px;
+}
 
-.cocial-icon ul a i:hover{
-	color: green;
-	transform: scale(1.3);
-	transform: .6s;}
-/*Social icon css end*/
+.contact .message-button .contact-btn{
+    width: 150px;
+    height: 50px;
+    background: #ff8b38;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 1px;
+    border: 2px solid white;
+    transform: .5sc;
+}
+.contact .contact-btn:hover{
+	transform: scale(1.05);
+	transform: .5sc;
+}
+
+/*****************************************
+ bottom seciton code start here 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+ .bottom-seciton{
+    width: 100%;
+    background: black;
+    height: 120px;
+ }
+
+
+
+ .bottom-seciton .socialicon-media-area{
+    display: table-cell;
+    height: 15vh;
+    vertical-align: middle;
+        padding-left: 440px;
+  
+}
+.bottom-seciton .socialicon-media-area ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.bottom-seciton .socialicon-media-area ul li a{
+   	font-size: 35px;
+    color: #cccccc;
+    padding-right: 45px;
+      
+	}
+	.bottom-seciton .bottom-content p{
+	    color: white;
+	    font-size: 15px;
+	    text-align: center;
+	}
