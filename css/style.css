@@ -35,10 +35,25 @@ header{
 }
 .nav-bar{
 	padding: 1rem 1rem !important;
+	color: white;
 }
 .nav-item{
 	    padding-left: 20px;
 }
+.navbar-brand h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: white;
+    font-size: 26px;
+        padding-left: 10px;
+}
+.navbar-brand span{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #ff9b51;
+    font-size: 26px;
+}
+
 
 /********************************
 banner css start here
