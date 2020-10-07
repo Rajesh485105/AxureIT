@@ -565,6 +565,9 @@ banner css start here
  .customer-revew .customer-revew-text{
  	text-align: center;
  }
+.customer-revew  .col-md-4{
+ 	       padding: 0px 37px;
+ }
  .customer-revew .customer-revew-text h1{
  	font-family: 'Raleway', sans-serif;
  	font-weight: 400;
