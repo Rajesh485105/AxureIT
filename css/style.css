@@ -733,8 +733,9 @@ transform: rotate(45deg);
  }
 
 .bottom-seciton .bottom-socialicon-media-area {
-	    text-align: center;
+    text-align: center;
     margin: 10px 0;
+   
  }
 .bottom-seciton .bottom-socialicon-media-area ul li{
     list-style: none;
@@ -752,3 +753,4 @@ transform: rotate(45deg);
 	font-size: 15px;
 	text-align: center;
 }
+
