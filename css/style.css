@@ -87,6 +87,9 @@ banner css start here
 	background: white;
  	margin: 25px 0;
  }
+ .banner .banner-text img{
+        width: 100px;;
+ }
 
 .banner-text p{
 	font-family: 'Raleway', sans-serif;
